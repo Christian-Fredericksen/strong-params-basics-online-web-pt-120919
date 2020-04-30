@@ -31,7 +31,7 @@ In the Rails app in this lesson there is our blog application with Strong Params
 
 That is the problem that strong params were created to fix. We want to make sure that when users submit a form we only let the fields we want get by.
 
-## Code Implementation
+## Code Implementation 
 
 
 Let's enable Strong Params. To do this, open up `config/application.rb` and delete the line that says: `config.action_controller.permit_all_parameters = true`. Now restart your rails server and navigate to `localhost:3000/posts/new`. Once there fill out the form and click `submit`. You'll see we get the following `ForbiddenAttributesError`:
